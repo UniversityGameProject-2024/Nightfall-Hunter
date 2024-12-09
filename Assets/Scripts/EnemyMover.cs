@@ -30,4 +30,18 @@ public class EnemyMover : MonoBehaviour
     {
         chaseTarget = null;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // Check if the enemy touches the player
+        if (other.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(1); // Reduce player health by 1
+            }
+        }
+    }
+
 }
