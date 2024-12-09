@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player_hk_recoil_0: -317337338393742922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

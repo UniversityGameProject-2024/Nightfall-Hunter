@@ -385,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tileset with cell size 256x256_0: -5643838501445919063
+      Tileset with cell size 256x256_1: 5642671927865209518
+      Tileset with cell size 256x256_2: 4583608980091225340
+      Tileset with cell size 256x256_3: -5002143823367494512
+      Tileset with cell size 256x256_4: 1181780923500188462
+      Tileset with cell size 256x256_5: -5580860998011499258
+      Tileset with cell size 256x256_6: -9210257616938290261
+      Tileset with cell size 256x256_7: -3380765201174030041
+      Tileset with cell size 256x256_8: -1007594554987085260
+      Tileset with cell size 256x256_9: -6072469166091600098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
