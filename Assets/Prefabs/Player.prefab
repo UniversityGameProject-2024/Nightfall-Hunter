@@ -97,6 +97,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8154567861554027249}
   - component: {fileID: 574909646303734531}
+  - component: {fileID: -8847824524408959641}
+  - component: {fileID: -6455342776360329278}
+  - component: {fileID: 1996688551333779434}
   - component: {fileID: 6534191154506722442}
   m_Layer: 0
   m_Name: Player
@@ -183,6 +186,62 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     m_Flags: 0
+--- !u!50 &-8847824524408959641
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5495796125125959437}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-6455342776360329278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5495796125125959437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ea78c79733314d8a9c29fc74aeca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8154567861554027249}
+  detectionRadius: 10
+  enemyMover: {fileID: 8775175836347556655, guid: 23b5278f825be8148afc9fe7b6e6df6a, type: 3}
+--- !u!114 &1996688551333779434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5495796125125959437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059c6a492e5ca8a4b95d2099a04abcde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 2819765414193259976, guid: 25bd920b58b8c9047a374a9fbdc8de34, type: 3}
+  _bulletSpeed: 5
 --- !u!58 &6534191154506722442
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -213,7 +272,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
