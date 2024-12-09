@@ -32,6 +32,6 @@ public class PlayerShoot : MonoBehaviour
 
         // Get the Rigidbody2D component of the bullet and set its velocity
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.velocity = _bulletSpeed * shootDirection;
+        rb.linearVelocity = _bulletSpeed * shootDirection;
     }
 }

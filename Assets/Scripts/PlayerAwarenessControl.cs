@@ -11,6 +11,20 @@ public class PlayerAwarenessControl : MonoBehaviour
     [Tooltip("Reference to the EnemyMover script")]
     [SerializeField] private EnemyMover enemyMover;
 
+    private void Awake()
+    {
+        // Ensure that the player and enemyMover are assigned correctly.
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player")?.transform; // Automatically find player by tag
+        }
+
+        if (enemyMover == null)
+        {
+            enemyMover = GetComponent<EnemyMover>(); // Get the EnemyMover if not manually set
+        }
+    }
+
     private void Update()
     {
         if (player == null || enemyMover == null) return;
